@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./art2.webp') no-repeat center center fixed; /* Chemin relatif */
+    background-size: cover;
+    color: #333;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent pour le formulaire */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espace entre le texte et l'image */
+    font-size: 28px;
+    color: #FF6F91; /* Rose bébé */
+}
+
+.title-icon {
+    width: 150px; /* Ajustez la taille de l'icône */
+    height: auto;
+}
+
+header p {
+    font-size: 16px;
+    color: #008B8B; /* Vert pistache */
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4682B4; /* Bleu ciel */
+}
+
+.required {
+    color: red;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #F5F5F5; /* Blanc cassé */
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #5D6D7E; /* Gris doux */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #FF6F91; /* Rose bébé */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #C85086; /* Rose foncé */
+}
+
+form {
+    display: block;
+    text-align: left; /* Aligne le texte des éléments du formulaire à gauche */
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4682B4; /* Bleu ciel */
+    text-align: left; /* Ajoute un alignement à gauche pour les labels */
+}
+
+input[type="text"], 
+input[type="email"],
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #F5F5F5; /* Fond blanc cassé */
+    text-align: left; /* Aligne le texte à gauche dans les champs de saisie */
+}
+
+
