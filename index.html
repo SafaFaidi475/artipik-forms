@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Bienvenu sur Artipik</title>
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <header>
+                <header>
+                    <h1>
+                        Bienvenue sur Artipik
+                        <img src="./peinture3.webp" alt="Brosse de peinture" class="title-icon">
+                    </h1>
+                    <p>Votre plateforme dédiée à la mise en valeur des artisans et des artistes. Aidez-nous à mieux comprendre vos besoins pour offrir des services adaptés.</p>
+                </header>
+                
+            
+        </header>
+        <form action="/submit" method="POST">
+            <!-- Email -->
+            <label for="email">Votre adresse email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+
+            <!-- Métier -->
+            <label for="metier">Quel est votre métier ? <span class="required">*</span></label>
+            <select id="metier" name="metier" required>
+                <option value="artiste">Artiste</option>
+                <option value="artisan">Artisan</option>
+                <option value="client">Client potentiel</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <!-- Type d'art ou d'artisanat -->
+            <label for="type-metier">Dans quel domaine travaillez-vous ? <span class="required">*</span></label>
+            <input type="text" id="type-metier" name="type-metier" placeholder="Exemple : peinture, couture..." required>
+
+            <!-- Expérience -->
+            <label for="experience">Depuis combien de temps exercez-vous cette activité ? </span></label>
+            <select id="experience" name="experience" required>
+                <option value="<1">Moins d’un an</option>
+                <option value="1-5">1 à 5 ans</option>
+                <option value=">5">Plus de 5 ans</option>
+            </select>
+
+            <!-- Difficultés -->
+            <label for="difficultes">Quelle est votre plus grande difficulté professionnelle ? </span></label>
+            <textarea id="difficultes" name="difficultes" rows="4" placeholder="Expliquez ici..." required></textarea>
+
+            <!-- Plateforme -->
+            <label for="plateforme">Utilisez-vous une plateforme pour promouvoir vos produits ? <span class="required">*</span></label>
+            <select id="plateforme" name="plateforme" required>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+
+            <!-- Fonctionnalités intéressantes -->
+            <label for="fonctionnalites">Quelles fonctionnalités vous intéressent le plus ? <span class="required">*</span></label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="fonctionnalites" value="promotion"> Promouvoir votre travail</label>
+                <label><input type="checkbox" name="fonctionnalites" value="conseils"> Obtenir des conseils juridiques</label>
+                <label><input type="checkbox" name="fonctionnalites" value="reseau"> Créer un réseau professionnel</label>
+                <label><input type="checkbox" name="fonctionnalites" value="marche"> Comprendre le marché</label>
+                <label><input type="checkbox" name="fonctionnalites" value="autre"> Autre (préciser)</label>
+            </div>
+
+            <!-- Budget -->
+            <label for="budget">Quel budget seriez-vous prêt(e) à investir dans une application comme Artipik ? <span class="required">*</span></label>
+            <select id="budget" name="budget" required>
+                <option value="gratuit">Gratuit</option>
+                <option value="<10">Moins de 10 DT</option>
+                <option value="10-30">10 à 30 DT</option>
+                <option value=">30">Plus de 30 DT</option>
+            </select>
+
+            <!-- Avis -->
+            <label for="avis">Un dernier mot pour Artipik ?</label>
+            <textarea id="avis" name="avis" rows="4" placeholder="Partagez vos idées ou remarques..."></textarea>
+
+            <!-- Submit -->
+            <button type="submit">Envoyer vos réponses</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
